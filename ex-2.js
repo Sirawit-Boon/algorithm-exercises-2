@@ -1,5 +1,20 @@
 function countPositivesSumNegatives(input) {
   //Start coding here
+  let result = []
+  let count = 0;
+  let sumNegative = 0;
+  for (let i = 0; i < input.length; i++) {
+      if (input[i] > 0) {
+        count++
+      } else {
+        sumNegative += input[i]
+      } 
+  }
+  if (!input) {
+    return []
+  }
+  result.push(count, sumNegative)
+  return result
 }
 
 let result1 = countPositivesSumNegatives([
